@@ -7,7 +7,7 @@ the [FMOD Audio Solution](https://www.fmod.com/docs/2.02/unreal/welcome.html) in
 
 ## Guide
 
-You can find a guide on how to integrate the `UOdinFmodAdapterComponent` in your Unreal Project in our [Developer Documentation](https://docs.4players.io/voice/unreal/guides/odin-fmod-adapter-unreal#usage).
+Following is a guide on how to integrate the Plugin in your Unreal Engine project. Alternatively you can look it up in our [Developer Documentation](https://docs.4players.io/voice/unreal/guides/odin-fmod-adapter-unreal#usage).
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ tutorial [here](https://www.fmod.com/docs/2.03/unreal/welcome.html).
 
 To set up the ODIN Voice Chat Plugin, please take a look at our Getting-Started guide, which you can find [here](https://docs.4players.io/voice/unreal).
 
-This guide will show you the changes to make, when integrating Odin with FMOD based on the outcome of the Getting Started Guide - as most steps are identical to the usual integration of Odin in your Unreal Project and we only need to exchange a few nodes and scene components in the end.
+This readme will show you the changes to make, when integrating Odin with FMOD based on the outcome of the Getting Started Guide - as most steps are identical to the usual integration of Odin in your Unreal Project and we only need to exchange a few nodes and scene components in the end.
 
 A sophisticated example can be found in a branch of our [Demo Project Repository](https://github.com/4Players/odin-unreal-demo/tree/fmod-adapter-sample).
 
@@ -49,19 +49,19 @@ These are the steps to take in FMOD Studio:
 
 1. Define an FMOD Audio Event
 
-![Create an FMOD Audio Event](/img/odin/unreal/odin-fmod-adapter/fmod-studio-create-event.png)
+![Create an FMOD Audio Event](/img/fmod-studio-create-event.png)
 
 2. Set the Event to **Persistent** playback
 
-![Create an FMOD Audio Event](/img/odin/unreal/odin-fmod-adapter/fmod-studio-event-set-persistent.png)
+![Create an FMOD Audio Event](/img/fmod-studio-event-set-persistent.png)
 
 3. Apply all needed effects specific to your project
 
-![Apply all needed effects](/img/odin/unreal/odin-fmod-adapter/fmod-studio-event-effects.png)
+![Apply all needed effects](/img/fmod-studio-event-effects.png)
 
 4. Add the event to a sound bank
 
-![Add event to sound bank](/img/odin/unreal/odin-fmod-adapter/fmod-studio-add-to-bank.png)
+![Add event to sound bank](/img/ofmod-studio-add-to-bank.png)
 
 That is all that is needed to setup the event in FMOD Studio, the other steps are taken in the Unreal Project. Build the FMOD Project as usual - exporting to your Unreal Project and switch to the Unreal Editor.
 
@@ -75,7 +75,7 @@ in your project with the plugin's `UOdinFmodAdapterComponent`.
 
 In the `OnMediaAdded` event of your Odin implementation in your project you can then call the `Play Odin Voice` afterwards. This function takes the FMOD Event defined earlier and the Odin Media Stream as Inputs. If both are valid, it will assign the Media Stream and then play the FMOD Event. This should look something like this:
 
-![Replacing Blueprint Nodes](/img/odin/unreal/odin-fmod-adapter/unreal-blueprint-replace-nodes.png)
+![Replacing Blueprint Nodes](/img/unreal-blueprint-replace-nodes.png)
 
 Like with the `OdinSynthComponent`, you can also choose to place the `UOdinFmodAdapter` directly on the Player Character
 as a component and then reference it in your `OnMediaAdded` event handler. This way you do not have to create it in the
