@@ -1,6 +1,6 @@
 # Unreal Plugin: Odin FMOD Adapter
 
-![FMOD and ODIN](/img/odin/unreal/odin-fmod/fmod_unreal_odin_header.jpg)
+![FMOD and ODIN](/img/fmod_unreal_odin_header.jpg)
 
 This is an additional Unreal Engine plugin, providing you with a Scene Component integrating the [ODIN Voice Chat Plugin](https://odin.4players.io/voice-chat/) with
 the [FMOD Audio Solution](https://www.fmod.com/docs/2.02/unreal/welcome.html) in Unreal.
