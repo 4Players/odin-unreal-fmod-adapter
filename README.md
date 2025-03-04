@@ -24,7 +24,7 @@ To set up the ODIN Voice Chat Plugin, please take a look at our Getting-Started 
 
 This readme will show you the changes to make, when integrating Odin with FMOD based on the outcome of the Getting Started Guide - as most steps are identical to the usual integration of Odin in your Unreal Project and we only need to exchange a few nodes and scene components in the end.
 
-A sophisticated example can be found in a branch of our [Demo Project Repository](https://github.com/4Players/odin-unreal-demo/tree/fmod-adapter-sample).
+A sophisticated example can be found in a branch of our [Demo Project Repository](https://github.com/4Players/odin-unreal-demo/tree/fmod-adapter-sample). A minimal sample is available in our [Minimal Sample Repository](https://github.com/4Players/odin-unreal-minimal-samples/tree/fmod-adapter-sample).
 
 ## Plugin Structure
 
