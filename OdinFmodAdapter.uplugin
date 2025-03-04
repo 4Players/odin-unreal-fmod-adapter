@@ -26,5 +26,15 @@
 				"FMODStudioEditor"
 			]
 		}
+	],
+	"Plugins": [
+		{
+			"Name": "Odin",
+			"Enabled": true
+		},
+		{
+			"Name": "FMODStudio",
+			"Enabled": true
+		}
 	]
 }
